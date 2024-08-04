@@ -1,0 +1,481 @@
+---
+import Stack from "./Stack.astro";
+---
+
+<section>
+  <div class="p-4">
+    <div
+      class="grid grid-cols-1 gap-4 list-none lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-4"
+    >
+      <div
+        class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 bg-white dark:bg-secondary shadow-xl dark:shadow-thick rounded-3xl p-8"
+      >
+        <div class="relative flex items-center gap-x-4">
+          <img
+            src="/images/avatar.jpg"
+            alt="avatar"
+            class="h-10 w-10 rounded-full ring-1 dark:ring-white/10 ring-primary/5"
+          />
+          <div class="text-sm leading-6">
+            <p class="font-semibold text-primary dark:text-white">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                 M. Fahrur Rizky
+              </a>
+            </p>
+            <p class="text-zinc-500 dark:text-zinc-400">
+              Ongoing at Stechoq Robotika 🇮🇩
+            </p>
+          </div>
+        </div>
+        <p
+          class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white"
+        >
+          Hey, welcome to my site!
+        </p>
+        <p
+          class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
+        >
+          I'm a web designer, developer, and surfer from Yogyakarta, Indonesia. In the
+          digital world, I craft interfaces and dive into coding intricacies.
+          <br />
+          <br />
+           Beyond screens, I find solace and joy riding waves along Special Region of Yogyakarta. My life blends tech and nature, foreigners, coding sessions, and catching
+          waves.
+        </p>
+        <p
+          class="text-lg my-6 tracking-tight font-medium text-primary dark:text-white md:text-3xl"
+        >
+          My Stack
+        </p>
+        <div class="md:grid md:grid-cols-2 gap-6 lg:grid-cols-1 opacity-0 animate-fade-in-infinity">
+          <Stack />
+        </div>
+      </div>
+      <div
+        class="ring-1 dark:ring-white/10 ring-primary/5 rounded-3xl justify-between shadow-xl dark:shadow-thick items-center flex flex-col p-8 h-full bg-white  dark:bg-secondary"
+      >
+        <div class="w-full">
+          <p
+            class="text-6xl font-normal tracking-tight text-primary dark:text-white lg:text-8xl"
+          >
+            Find me on
+          </p>
+        </div>
+        <svg class="opacity-0 animate-fade-in-infinity bg-contain bg-[url('/public/smile.svg')] bg-center bg-no-repeat "></svg>
+        <div class="grid mt-4 grid-cols-4 md:grid-cols-8 lg:grid-cols-4 gap-y-4 gap-4 justify-center w-full">
+          <a
+            href="mailto:fahrurrizky022@gmail.com"
+            class="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-mail h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
+              viewBox="0 0 24 24"
+              stroke-width="0.8"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+              ></path><path d="M3 7l9 6l9 -6"></path></svg
+            >
+          </a>
+          <a
+            href="https://github.com/fahrurrizky"
+            class="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-github h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
+              viewBox="0 0 24 24"
+              stroke-width="0.8"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              ></path></svg
+            >
+          </a>
+          <a
+            href="https://sentence.shoftime.tech/"
+            class="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="800px"
+              height="800px"
+              viewBox="0 0 64 64"
+              stroke-width="3"
+              stroke="currentColor"
+              fill="none"
+              class="icon icon-tabler h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50"
+            >
+              <path d="M39.93,55.72A24.86,24.86,0,1,1,56.86,32.15a37.24,37.24,0,0,1-.73,6"/>
+              <path d="M37.86,51.1A47,47,0,0,1,32,56.7"/>
+              <path d="M32,7A34.14,34.14,0,0,1,43.57,30a34.07,34.07,0,0,1,.09,4.85"/>
+              <path d="M32,7A34.09,34.09,0,0,0,20.31,32.46c0,16.2,7.28,21,11.66,24.24"/>
+              <line x1="10.37" y1="19.9" x2="53.75" y2="19.9"/>
+              <line x1="32" y1="6.99" x2="32" y2="56.7"/>
+              <line x1="11.05" y1="45.48" x2="37.04" y2="45.48"/>
+              <line x1="7.14" y1="32.46" x2="56.86" y2="31.85"/>
+              <path d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z"/>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/m-fahrur-rizky-444655220/"
+            class="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler h-6 w-6 group-hover:scale-125 duration-300 text-primary dark:text-white group-hover text-primary:dark:text-white/50 icon-tabler-brand-linkedin"
+              viewBox="0 0 50 50"
+              stroke-width="0.8"
+              fill="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              >
+                <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <a
+        href="https://www.shoftime.tech/"
+        class="ring-1 lg:row-span-2 flex flex-col justify-between group hover:ring-primary/10 dark:hover:ring-white/20 duration-300 h-full dark:ring-white/10 ring-primary/5 lg:row-start-2 md:grid-cols-2 md:grid lg:gap-0 md:items-center md:gap-12 lg:grid-cols-none lg:col-start-2 lg:col-span-2 rounded-3xl p-8 bg-white dark:bg-secondary shadow-xl dark:shadow-thick"
+      >
+        <div>
+          <p
+            class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl"
+          >
+            Shoftime`DTCA
+          </p>
+          <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+            We're not exactly the best team, although we build great ones.
+            <br />
+            <br />
+            our team excels in creating outstanding solutions with a commitment to excellence. We may not be perfect, but our dedication to innovation and quality shines through in every project.
+            We offer a streamlined approach, ensuring seamless collaboration and flexibility. With us, you get top-notch results and exceptional service, always tailored to your needs.
+          </p>
+        </div>
+        <div class="mt-8">
+          <img
+            src="/images/shoftime.png"
+            class="rounded-2xl group-hover:ring-white/20 duration-300 invert dark:invert-0 aspect-[4/4] bg-primary/5 dark:bg-primary ring-1 ring-white/10  object-cover"
+            alt="shoftime"
+          />
+        </div>
+      </a>
+      <div
+        class="ring-1 dark:ring-white/10  ring-primary/5 flex flex-col justify-between items-center rounded-3xl shadow-xl dark:shadow-thick p-8  bg-white dark:bg-secondary overflow-hidden text-center lg:text-left"
+      >
+        <div>
+          <p
+            class="text-xl text-primary dark:text-white lg:text-7xl tracking-tight"
+          >
+            Grab my résumé!
+          </p>
+          <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 md:max-w-xs lg:max-w-none">
+            Unlock the doors to explore the rich tapestry of my professional
+            journey and accomplishments.
+          </p>
+        </div>
+        <div class="w-full mt-8 md:max-w-xs lg:max-w-none">
+          <a
+            type="button"
+            href="https://drive.google.com/file/d/1QOLKlxDUxcx2WFLhT15E154FwVH9wS8M/view?usp=sharing"
+            class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-white/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between"
+          >
+            Download my CV
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-download w-4 h-4"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path><path
+                d="M7 11l5 5l5 -5"></path><path d="M12 4l0 12"></path></svg
+            >
+          </a>
+        </div>
+      </div>
+      <a
+        href="https://client-attendance-app.vercel.app/"
+        class="bg-cover ring-1 lg:row-start-3 items-center h-full flex p-5 flex-col justify-center hover:ring-primary/5 dark:hover:ring-white/20 dark:ring-white/10 ring-primary/5 relative rounded-3xl overflow-hidden bg-white dark:bg-secondary shadow-xl dark:shadow-thick"
+      > 
+      <div class="md:grid md:grid-cols-2 gap-6 lg:grid-cols-1">
+        <div>
+          <img
+            src="/images/attendance.png"
+            alt="attendance"
+            class="rounded group-hover:ring-white/20 duration-300 invert dark:invert-0 object-cover"
+          />
+          <div class="flex flex-wrap my-2">
+            <div
+              class="flex items-center text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              >
+              <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#53C1DE"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#53C1DE"/>
+              </svg>
+              <span class="ml-2.5">React Js</span>
+            </div>
+            <div
+              class="flex items-center ml-6 text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              >
+              <path fill="#4DB6AC" d="M33.357,21.5h-8.882c-0.187,0-0.308-0.198-0.222-0.365l5.03-9.745	c0.13-0.253-0.195-0.492-0.398-0.293l-14.2,13.974c-0.159,0.157-0.048,0.428,0.175,0.428H24.2c0.202,0,0.32,0.227,0.205,0.393	l-7.126,10.265c-0.17,0.245,0.154,0.528,0.374,0.327l15.873-14.55C33.694,21.78,33.585,21.5,33.357,21.5z"></path
+              </svg>
+              <span class="ml-2.5">Chakra UI</span>
+            </div>
+          </div>
+          <p class="text-lg tracking-tight font-medium text-primary dark:text-white md:text-3xl">Attendance System App</p>
+          <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            Attedding platform✨ Admin can create new user with role employee Admin or User, Admin can login to the app and see list Employee, Employee can update personal data & can perform clock in and out,Employee can see attendance history and payroll reports.
+          </p>
+        </div>
+      </div>
+      </a>
+      <a
+        href="https://themajesticmixer.netlify.app/"
+        class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-white dark:bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl p-8"
+      >
+        <div class="-mr-24">
+          <img
+            src="/images/majesticMixer.png"
+            alt="majesticMixer"
+          />
+        </div>
+        <div class="mt-8">
+          <div class="flex flex-wrap">
+            <div
+              class="flex items-center text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              >
+              <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#53C1DE"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#53C1DE"/>
+              </svg>
+              <span class="ml-2.5">React Js</span>
+            </div>
+            <div
+              class="flex items-center ml-6 text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              >
+              <path fill="#4DB6AC" d="M33.357,21.5h-8.882c-0.187,0-0.308-0.198-0.222-0.365l5.03-9.745	c0.13-0.253-0.195-0.492-0.398-0.293l-14.2,13.974c-0.159,0.157-0.048,0.428,0.175,0.428H24.2c0.202,0,0.32,0.227,0.205,0.393	l-7.126,10.265c-0.17,0.245,0.154,0.528,0.374,0.327l15.873-14.55C33.694,21.78,33.585,21.5,33.357,21.5z"></path
+              </svg>
+              <span class="ml-2.5">Chakra UI</span>
+            </div>
+          </div>
+          <p
+            class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl mt-6"
+          >
+          POS for Majectic Mixer
+          </p>
+          <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            Introducing our cutting-edge Point of Sale (POS) application, transforming the way Majestic Mixer operates its retail stores! 🌟
+          </p>
+          <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            👤 Personal Touch: Cashiers can update their profile photos, adding a personalized element to each transaction.
+          </p>
+          <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            💳 Smooth Transactions: From payments to purchases, our app ensures a seamless experience for both cashiers and customers.
+          </p>
+          <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            🔍 Product Proficiency: Easily navigate product lists, filter by category or name, and sort items alphabetically or by price.
+          </p>
+          <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            🛠️ Admin Mastery: Admins have full control over user management, cashier creation, and product listings.
+          </p>
+        </div>
+      </a>
+      <div
+        class=" bg-contain bg-[url('/public/gradient.svg')] bg-center bg-no-repeat ring-1 dark:ring-white/10 ring-primary/5 flex flex-col p-8 h-full justify-center items-center rounded-3xl overflow-hidden relative lg:col-span-2 lg:row-start-4 bg-white dark:bg-secondary shadow-xl dark:shadow-thick"
+      >
+        <div class="relative p-8 text-center w-full">
+          <p
+            class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl"
+          >
+            Subscribe <span class="lg:block">to my newsletter</span>
+          </p>
+          <form class="mt-6 sm:flex w-full lg:max-w-sm mx-auto">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              autocomplete="email"
+              required=""
+              class="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-zinc-100 dark:bg-transparent ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
+              placeholder="Enter your email"
+            />
+            <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
+              <button
+                type="submit"
+                class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-white/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between"
+                >Subscribe</button
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <a
+        href="https://beeyondthepages.netlify.app/"
+        class="ring-1 dark:ring-white/10 ring-primary/5 shadow-xl dark:shadow-thick rounded-3xl p-8 lg:row-start-4 h-full flex flex-col justify-between bg-white dark:bg-secondary"
+      >
+        <div class="md:grid md:grid-cols-2 gap-6 lg:grid-cols-1">
+          <div>
+            <img
+              src="/images/beeyondThepages.png"
+              alt="beeyondThepages"
+              class="rounded group-hover:ring-white/20 duration-300 invert dark:invert-0 object-cover"
+            />
+            <div class="flex flex-wrap my-2">
+              <div
+                class="flex items-center text-sm font-medium text-primary dark:text-white"
+              >
+                <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                >
+                <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z" fill="#53C1DE"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z" fill="#53C1DE"/>
+                </svg>
+                <span class="ml-2.5">React Js</span>
+              </div>
+              <div
+                class="flex items-center ml-6 text-sm font-medium text-primary dark:text-white"
+              >
+                <svg
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                >
+                <path fill="#4DB6AC" d="M33.357,21.5h-8.882c-0.187,0-0.308-0.198-0.222-0.365l5.03-9.745	c0.13-0.253-0.195-0.492-0.398-0.293l-14.2,13.974c-0.159,0.157-0.048,0.428,0.175,0.428H24.2c0.202,0,0.32,0.227,0.205,0.393	l-7.126,10.265c-0.17,0.245,0.154,0.528,0.374,0.327l15.873-14.55C33.694,21.78,33.585,21.5,33.357,21.5z"></path
+                </svg>
+                <span class="ml-2.5">Chakra UI</span>
+              </div>
+            </div>
+            <p class="text-lg tracking-tight font-medium text-primary dark:text-white md:text-3xl">Beeyond The Pages</p>
+            <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+              Blogging platform✨ Personalize your profile with essential details like usernames, emails, and phone numbers for a stronger connection. Enjoy a visually engaging landing page that sets the tone for your exploration. Dive into your favorite blog topics, manage your profile, write engaging posts, and seamlessly upload images to enhance your content.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://rabiberes.com/"
+        class="lg:row-span-2 ring-1 dark:ring-white/10 ring-primary/5 hover:ring-primary/5 bg-white dark:bg-secondary  dark:hover:ring-white/20 overflow-hidden duration-300 shadow-xl dark:shadow-thick rounded-3xl p-8"
+      >
+        <div>
+          <img
+            src="/images/rabiberes.png"
+            alt="rabiberes"
+          />
+        </div>
+        <div class="mt-8">
+          <div class="flex flex-wrap">
+            <div
+              class="flex items-center text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              fill="none"
+              >
+                <path fill="#212121" d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"></path>
+              </svg>
+              <span class="ml-2.5">Next Js</span>
+            </div>
+            <div
+              class="flex items-center ml-6 text-sm font-medium text-primary dark:text-white"
+            >
+              <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              fill="none"
+              >
+                <path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"></path>
+              </svg>
+              <span class="ml-2.5">Tailwind</span>
+            </div>
+          </div>
+          <p
+            class="ext-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl mt-6"
+          >
+          Platform Wedding Organizers 
+          </p>
+          <p class="mt-4 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            Introducing rabiberes.com, the ultimate platform for wedding organizers to connect with top-notch vendors! 🌟
+          </p>
+          <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            ✨ Surprising Appearance Design: Enjoy a visually appealing and modern interface that makes navigating the platform a breeze.
+          </p>
+          <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            💳 Smooth Transactions: Experience seamless payments and purchases, ensuring secure and efficient financial interactions.
+          </p>
+          <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            🌸 Diversity of Vendors: Access a wide range of vendors, from wedding dresses to photographers, catering to various tastes and preferences.
+          </p>
+          <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400 font-light">
+            💖 Personal Touch: Personalize your wedding planning experience by managing detailed information about you and your partner, ensuring perfect plans for your big day.
+          </p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in-infinity {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade-in-infinity {
+  animation: fade-in-infinity 5s ease-in-out infinite;
+}
+</style>
