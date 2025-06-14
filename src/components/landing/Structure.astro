@@ -325,42 +325,87 @@ import Stack from "./Stack.astro";
           </p>
         </div>
       </a>
-      <div
-        class=" bg-contain bg-[url('/public/gradient.svg')] bg-center bg-no-repeat ring-1 dark:ring-white/10 ring-primary/5 flex flex-col p-8 h-full justify-center items-center rounded-3xl overflow-hidden relative lg:col-span-2 lg:row-start-4 bg-secondary dark:bg-secondary shadow-thick dark:shadow-thick"
-      >
+      <div class="bg-contain bg-[url('/public/gradient.svg')] bg-center bg-no-repeat ring-1 dark:ring-white/10 ring-primary/5 flex flex-col p-8 h-full justify-center items-center rounded-3xl overflow-hidden relative lg:col-span-2 lg:row-start-4 bg-secondary dark:bg-secondary shadow-thick dark:shadow-thick">
         <div class="relative p-8 text-center w-full">
-          <p class="text-xl tracking-tight font-medium text-white dark:text-white md:text-6xl">
-            Get in touch
-          </p>
-          <p class="text-center text-stone-50 text-xs mt-2">
-            I'm always open to new opportunities, Whether you have a
-            question about a shared interest, or just want to say hello,
-            I'd be more than happy to engage in a meaningful conversation.
-            So feel free to message me anytime, my inbox is always
-            open. I’ll try my best to get back to you!
-          </p>
-          <form class="mt-6 sm:flex w-full lg:max-w-sm mx-auto">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input
-              type="email"
-              name="email-address"
-              id="email-address"
-              autocomplete="email"
-              required=""
-              class="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-transparent ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
-              placeholder="Enter your email"
-            />
-            <div class="mt-4 sm:ml-2 sm:mt-0 sm:flex-shrink-0">
-              <button
-                type="submit"
-                onclick="window.location.href = 'mailto:fahrurrizky022@gmail.com';"
-                class="text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-white dark:bg-white dark:text-primary dark:hover:text-white hover:text-white dark:hover:bg-primary/10 hover:bg-primary/10 text-primary flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between"
-                >Send Message</button
-              >
-            </div>
-          </form>
+            <p class="text-xl tracking-tight font-medium text-white dark:text-white md:text-6xl">
+                Get in touch
+            </p>
+            <p class="text-center text-stone-50 text-xs mt-2">
+                I'm always open to new opportunities, Whether you have a
+                question about a shared interest, or just want to say hello,
+                I'd be more than happy to engage in a meaningful conversation.
+                So feel free to message me anytime, my inbox is always
+                open. I'll try my best to get back to you!
+            </p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" id="form" class="mt-6 needs-validation" novalidate>
+              <!-- Add your Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="8bdd7c7e-9690-496f-9f86-cf48df715502" />
+              <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+          
+              <!-- Name Field -->
+              <div class="mb-4">
+                  <input
+                      type="text"
+                      name="name"
+                      placeholder="Full Name"
+                      required
+                      class="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-transparent ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  />
+                  <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1 hidden text-left">
+                      Please provide your full name.
+                  </div>
+              </div>
+          
+              <!-- Email Field -->
+              <div class="mb-4">
+                  <label for="email-address" class="sr-only">Email address</label>
+                  <input
+                      type="email"
+                      name="email"
+                      id="email-address"
+                      autocomplete="email"
+                      required
+                      class="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-transparent ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                      placeholder="Enter your email"
+                  />
+                  <div class="empty-feedback text-red-400 text-sm mt-1 hidden text-left">
+                      Please provide your email address.
+                  </div>
+                  <div class="invalid-feedback text-red-400 text-sm mt-1 hidden text-left">
+                      Please provide a valid email address.
+                  </div>
+              </div>
+          
+              <!-- Message Field -->
+              <div class="mb-4">
+                  <textarea 
+                      name="message" 
+                      required 
+                      placeholder="Your Message" 
+                      class="block w-full px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-transparent ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm h-24 resize-none"
+                  ></textarea>
+                  <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1 hidden text-left">
+                      Please enter your message.
+                  </div>
+              </div>
+          
+              <!-- Submit Button -->
+              <div class="w-full flex justify-end">
+                  <button
+                      type="submit"
+                      id="submit-btn"
+                      class="text-sm py-2 px-4 font-semibold focus:ring-2 rounded-lg bg-white dark:bg-white dark:text-primary dark:hover:text-white hover:text-white dark:hover:bg-primary/10 hover:bg-primary/10 text-primary flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-center"
+                  >
+                      Send Message
+                  </button>
+              </div>
+          
+              <!-- Result Message -->
+              <div id="result" class="mt-3 text-center text-sm"></div>
+          </form>            
         </div>
-      </div>
+    </div>
       <a
         href="https://beeyondthepages.netlify.app/"
         target="_blank"
@@ -483,13 +528,137 @@ import Stack from "./Stack.astro";
 </section>
 
 <style>
-  @keyframes fade-in-infinity {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
+  .font-extralight {
+      font-weight: 200;
+  }
 
-.animate-fade-in-infinity {
-  animation: fade-in-infinity 5s ease-in-out infinite;
-}
+  /* Form focus animations */
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Checkbox styling */
+  input[type='checkbox']:checked {
+      background-color: #000;
+      border-color: #000;
+  }
+
+  /* Smooth transitions for all interactive elements */
+  * {
+      transition-property: transform, box-shadow, background-color, border-color, opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Form validation styles */
+  .form-group input:invalid:not(:placeholder-shown),
+  .form-group textarea:invalid:not(:placeholder-shown) {
+      border-color: #ef4444;
+  }
+
+  .form-group input:valid,
+  .form-group textarea:valid {
+      border-color: #10b981;
+  }
+
+  .invalid-feedback,
+  .empty-feedback {
+      display: none;
+  }
+
+  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+      display: block;
+  }
+
+  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+      display: block;
+  }
+
+  .is-invalid,
+  .was-validated :invalid {
+      border-color: #dc3545;
+  }
+
+  /* Success and error message styles */
+  .text-success {
+      color: #10b981;
+  }
+
+  .text-error {
+      color: #ef4444;
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('form') as HTMLFormElement;
+      const result = document.getElementById('result');
+      const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+
+      form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          form.classList.add('was-validated');
+          
+          if (!form.checkValidity()) {
+              (form.querySelectorAll(':invalid')[0] as HTMLElement).focus();
+              return;
+          }
+
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+
+          // Show loading state
+          result.style.display = 'block';
+          result.className = 'mt-3 text-center text-sm text-blue-400';
+          result.innerHTML = 'Sending message...';
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Sending...';
+
+          fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json',
+              },
+              body: json,
+          })
+          .then(async (response) => {
+              let json = await response.json();
+              
+              if (response.status === 200) {
+                  // Success
+                  result.className = 'mt-3 text-center text-sm text-success';
+                  result.innerHTML = '✅ ' + (json.message || 'Message sent successfully!');
+                  
+                  // Reset form after success
+                  form.reset();
+                  form.classList.remove('was-validated');
+              } else {
+                  // Error
+                  console.log('Error response:', response);
+                  result.className = 'mt-3 text-center text-sm text-error';
+                  result.innerHTML = '❌ ' + (json.message || 'Failed to send message. Please try again.');
+              }
+          })
+          .catch((error) => {
+              console.log('Network error:', error);
+              result.className = 'mt-3 text-center text-sm text-error';
+              result.innerHTML = '❌ Network error! Please check your connection and try again.';
+          })
+          .finally(() => {
+              // Reset button state
+              (submitBtn as HTMLButtonElement).disabled = false;
+              submitBtn.innerHTML = 'Send Message';
+              
+              // Hide message after 5 seconds
+              setTimeout(() => {
+                  result.style.display = 'none';
+                  result.innerHTML = '';
+              }, 5000);
+          });
+      });
+  });
+</script>
